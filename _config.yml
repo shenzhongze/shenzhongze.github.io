@@ -78,7 +78,7 @@ theme: uno
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  rope: git@github.com:shenzhongze/shenzhongze.github.io.git
+  repo: git@github.com:shenzhongze/shenzhongze.github.io.git
   branch: master
 
 search:
