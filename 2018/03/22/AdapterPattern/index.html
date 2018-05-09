@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="述职,目标," />
+  <meta name="keywords" content="设计模式," />
 
 
 
@@ -79,18 +79,22 @@
 
 
 
-<meta name="description" content="为什么要叫申旗仪式呢?因为我曾经的豆瓣号 （已注销） 叫这个，觉得很有纪念意义。自己的第一个博客，这里要特别感谢胡匪同学。欢迎去他家坐坐【黄枫谷】">
-<meta name="keywords" content="述职,目标">
+<meta name="description" content="从今年开始就着重学习和研究设计模式啦。之前几年一直想看来着苦于境界达不到，很多概念看的一知半解。当然现在还是一知半解，学习设计模式无论是对编码的水平还是对业务抽象程度上会有很大的帮助。我们最主要的目标还是学以致用而不是将它们停留在博客上。">
+<meta name="keywords" content="设计模式">
 <meta property="og:type" content="article">
-<meta property="og:title" content="序言！！！">
-<meta property="og:url" content="http://yoursite.com/2018/01/12/hello-world/index.html">
+<meta property="og:title" content="适配器模式">
+<meta property="og:url" content="http://yoursite.com/2018/03/22/AdapterPattern/index.html">
 <meta property="og:site_name" content="申旗仪式">
-<meta property="og:description" content="为什么要叫申旗仪式呢?因为我曾经的豆瓣号 （已注销） 叫这个，觉得很有纪念意义。自己的第一个博客，这里要特别感谢胡匪同学。欢迎去他家坐坐【黄枫谷】">
+<meta property="og:description" content="从今年开始就着重学习和研究设计模式啦。之前几年一直想看来着苦于境界达不到，很多概念看的一知半解。当然现在还是一知半解，学习设计模式无论是对编码的水平还是对业务抽象程度上会有很大的帮助。我们最主要的目标还是学以致用而不是将它们停留在博客上。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-02-24T01:54:32.226Z">
+<meta property="og:image" content="http://yoursite.com/2018/03/22/AdapterPattern/电源适配器.png">
+<meta property="og:image" content="http://yoursite.com/2018/03/22/AdapterPattern/类适配器.png">
+<meta property="og:image" content="http://yoursite.com/2018/03/22/AdapterPattern/对象适配器.png">
+<meta property="og:updated_time" content="2018-05-09T10:28:51.293Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="序言！！！">
-<meta name="twitter:description" content="为什么要叫申旗仪式呢?因为我曾经的豆瓣号 （已注销） 叫这个，觉得很有纪念意义。自己的第一个博客，这里要特别感谢胡匪同学。欢迎去他家坐坐【黄枫谷】">
+<meta name="twitter:title" content="适配器模式">
+<meta name="twitter:description" content="从今年开始就着重学习和研究设计模式啦。之前几年一直想看来着苦于境界达不到，很多概念看的一知半解。当然现在还是一知半解，学习设计模式无论是对编码的水平还是对业务抽象程度上会有很大的帮助。我们最主要的目标还是学以致用而不是将它们停留在博客上。">
+<meta name="twitter:image" content="http://yoursite.com/2018/03/22/AdapterPattern/电源适配器.png">
 
 
 
@@ -120,13 +124,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/01/12/hello-world/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/03/22/AdapterPattern/"/>
 
 
 
 
 
-  <title>序言！！！ | 申旗仪式</title>
+  <title>适配器模式 | 申旗仪式</title>
   
 
 
@@ -263,7 +267,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/01/12/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/22/AdapterPattern/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="申zz">
@@ -280,7 +284,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">序言！！！</h1>
+          <h1 class="post-title" itemprop="name headline">适配器模式</h1>
         
 
         <div class="post-meta">
@@ -292,8 +296,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-12T00:00:00+08:00">
-                2018-01-12
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-22T00:00:00+08:00">
+                2018-03-22
               </time>
             
 
@@ -315,8 +319,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/杂文/" itemprop="url" rel="index">
-                    <span itemprop="name">杂文</span>
+                  <a href="/categories/问道/" itemprop="url" rel="index">
+                    <span itemprop="name">问道</span>
                   </a>
                 </span>
 
@@ -332,7 +336,7 @@
 
           
           
-             <span id="/2018/01/12/hello-world/" class="leancloud_visitors" data-flag-title="序言！！！">
+             <span id="/2018/03/22/AdapterPattern/" class="leancloud_visitors" data-flag-title="适配器模式">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -368,11 +372,54 @@
       
 
       
-        <p>为什么要叫申旗仪式呢?因为我曾经的豆瓣号 （已注销） 叫这个，觉得很有纪念意义。<br>自己的第一个博客，这里要特别感谢胡匪同学。欢迎去他家坐坐【<a href="http://www.huminxi.com" target="_blank" rel="noopener">黄枫谷</a>】</p>
-<a id="more"></a>
-<h2 id="2018年初"><a href="#2018年初" class="headerlink" title="2018年初"></a>2018年初</h2><p>   今天下午进行了述职。述职报告写的不是很用心吧。写的内容比较空洞，场面话比较多。评委不满意，自己也不满意。<br>跟大鹏等人比起来差距还是蛮大的。自己对自己的定位也一直不清晰。不知道是继续走开发这条路还是应该选择其他路线，<br>没有一个准确的目标。那就在这里给自己定一个2018年的目标吧。<br>     1.这一年让自己找准方向，到年尾的时候能准备说出来自己想要什么未来想干什么。而不是别人问到你时，说的那么宽泛。<br>     2.看三本技术类的书籍<br>     3.努力戒掉王者荣耀的游戏<br>     4.处理好自己感情上的事，不要让它影响工作<br>     5.努力锻炼好身体，最少一次半马，努力一次全马<br>     6.最少写20篇博客<br>     7.每天背英语单词坚持下去<br>     8.风火轮团队每月一次团队分享<br>     。。。。。。。。。。。</p>
-<pre><code>首先第一个 把markdown学好。
-</code></pre>
+        <p>从今年开始就着重学习和研究设计模式啦。之前几年一直想看来着苦于境界达不到，很多概念看的一知半解。<br>当然现在还是一知半解，学习设计模式无论是对编码的水平还是对业务抽象程度上会有很大的帮助。我们最主要的目标还是<br>学以致用而不是将它们停留在博客上。</p>
+ <a id="more"></a>
+<h2 id="什么是适配器模式"><a href="#什么是适配器模式" class="headerlink" title="什么是适配器模式"></a>什么是适配器模式</h2><p> <img src="/2018/03/22/AdapterPattern/电源适配器.png" alt="电源适配器"></p>
+<ul>
+<li><p>适配器模式把一个类的接口变换成客户端所期待的另一种接口，从而使原本因接口不匹配而无法在一起工作的两个类<br>能够在一起工作。从功能上说，这些接口不兼容的类一般具有相同或相似的功能。通常我们通过修改该类的接口来解决这种<br>接口不兼容的情形，但是如果我们不愿意为了一个应用而修改原接口，或者我们压根儿就没有对象的源代码的时候，适配器<br>模式就会派上用场。</p>
+<h2 id="适配器模式角色"><a href="#适配器模式角色" class="headerlink" title="适配器模式角色"></a>适配器模式角色</h2><ul>
+<li>目标角色（Target）：这是所期待的接口，目标可以是具体或抽象的类</li>
+<li>源角色 （Adaptee）：一个现存需要适配的接口</li>
+<li>适配器角色 （Adapter）: 负责将Adaptee的接口转换为Target的接口。适配器是一个具体的类，这是该模式的核心</li>
+</ul>
+<h2 id="适配器模式的用途"><a href="#适配器模式的用途" class="headerlink" title="适配器模式的用途"></a>适配器模式的用途</h2><ul>
+<li>用电器做例子，笔记本电脑的插头一般是三相的，即除了阳极、阴极外，还有一个地极。而有些地方的电源插座却只有两极，没有地极。<br>电源插座与笔记本电脑的电源插头不匹配使得笔记本电脑无法使用。这时候一个三相到两相的转换器就能解决此问题。</li>
+<li>笔记本电脑的工作电压是20V，而我国的家庭用电是220V，如何让20V的笔记本电脑能够在220V的电压下工作？<br>答案是引入一个电源适配器(AC Adapter)，俗称充电器或变压器，有了这个电源适配器，生活用电和笔记本电脑即可兼容</li>
+</ul>
+<h2 id="适配器的方式"><a href="#适配器的方式" class="headerlink" title="适配器的方式"></a>适配器的方式</h2><h3 id="类适配器"><a href="#类适配器" class="headerlink" title="类适配器"></a>类适配器</h3><ul>
+<li>适配器Adapter继承我们的被适配者Adaptee，并实现目标接口Target。由于Java中是单继承，所以这个适配器仅仅只能服务于所继承的被适配者Adaptee。<br><img src="/2018/03/22/AdapterPattern/类适配器.png" alt="类适配器"></li>
+</ul>
+<h3 id="对象适配器"><a href="#对象适配器" class="headerlink" title="对象适配器"></a>对象适配器</h3><ul>
+<li>适配器实现我们的目标接口，但是并不继承需要被适配的类。而是通过在适配器的构造函数中将需要被适配的类传递进来从而进行适配<br><img src="/2018/03/22/AdapterPattern/对象适配器.png" alt="对象适配器"></li>
+</ul>
+<h3 id="实现方式"><a href="#实现方式" class="headerlink" title="实现方式"></a>实现方式</h3><ul>
+<li>继承</li>
+<li>组合</li>
+</ul>
+<h3 id="优缺点"><a href="#优缺点" class="headerlink" title="优缺点"></a>优缺点</h3><h4 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h4><ul>
+<li>符合开闭原则</li>
+<li>适配者类和目标类解耦</li>
+<li>代码复用</li>
+<li>更好的扩展性</li>
+</ul>
+<h4 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h4><ul>
+<li>过多的使用适配器，会让系统非常零乱，不易整体进行把握。</li>
+</ul>
+<h4 id="类适配器的优点"><a href="#类适配器的优点" class="headerlink" title="类适配器的优点"></a>类适配器的优点</h4><ul>
+<li>由于适配器类是适配者类的子类，因此可以在适配器类中置换一些适配者的方法，使得适配器的灵活性更强</li>
+</ul>
+<h4 id="类适配器的缺点"><a href="#类适配器的缺点" class="headerlink" title="类适配器的缺点"></a>类适配器的缺点</h4><ul>
+<li>对于Java、C#等不支持多重继承的语言，一次最多只能适配一个适配者类，而且目标抽象类只能为接口，不能为类，其使用有一定的局限性，不能将一个适配者类和他的子类同时适配到目标接口。</li>
+</ul>
+<h4 id="对象适配器的优点"><a href="#对象适配器的优点" class="headerlink" title="对象适配器的优点"></a>对象适配器的优点</h4><ul>
+<li>把多个不同的适配者适配到同一个目标，也就是说，同一个适配器可以把适配者类和他的子类都适配到目标接口。</li>
+</ul>
+<h4 id="对象适配器的缺点"><a href="#对象适配器的缺点" class="headerlink" title="对象适配器的缺点"></a>对象适配器的缺点</h4><ul>
+<li>与类适配器模式相比，如果要置换适配者类的方法就不容易了</li>
+</ul>
+</li>
+</ul>
+
       
     </div>
     
@@ -389,9 +436,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/述职/" rel="tag"># 述职</a>
-          
-            <a href="/tags/目标/" rel="tag"># 目标</a>
+            <a href="/tags/设计模式/" rel="tag"># 设计模式</a>
           
         </div>
       
@@ -404,14 +449,18 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/02/23/firstDay/" rel="next" title="节后上班第一天">
+                <i class="fa fa-chevron-left"></i> 节后上班第一天
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/02/23/firstDay/" rel="prev" title="节后上班第一天">
-                节后上班第一天 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/05/09/upload-hexo-pic/" rel="prev" title="hexo博客上传图片">
+                hexo博客上传图片 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -548,7 +597,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#2018年初"><span class="nav-number">1.</span> <span class="nav-text">2018年初</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是适配器模式"><span class="nav-number">1.</span> <span class="nav-text">什么是适配器模式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#适配器模式角色"><span class="nav-number">2.</span> <span class="nav-text">适配器模式角色</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#适配器模式的用途"><span class="nav-number">3.</span> <span class="nav-text">适配器模式的用途</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#适配器的方式"><span class="nav-number">4.</span> <span class="nav-text">适配器的方式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#类适配器"><span class="nav-number">4.1.</span> <span class="nav-text">类适配器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#对象适配器"><span class="nav-number">4.2.</span> <span class="nav-text">对象适配器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实现方式"><span class="nav-number">4.3.</span> <span class="nav-text">实现方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#优缺点"><span class="nav-number">4.4.</span> <span class="nav-text">优缺点</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#优点"><span class="nav-number">4.4.1.</span> <span class="nav-text">优点</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#缺点"><span class="nav-number">4.4.2.</span> <span class="nav-text">缺点</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#类适配器的优点"><span class="nav-number">4.4.3.</span> <span class="nav-text">类适配器的优点</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#类适配器的缺点"><span class="nav-number">4.4.4.</span> <span class="nav-text">类适配器的缺点</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#对象适配器的优点"><span class="nav-number">4.4.5.</span> <span class="nav-text">对象适配器的优点</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#对象适配器的缺点"><span class="nav-number">4.4.6.</span> <span class="nav-text">对象适配器的缺点</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
